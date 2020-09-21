@@ -8,7 +8,7 @@
 ---
 
 ## Link 
-
+https://mayorgak.github.io/quiz-game02
 ---
 
 ## Built with 
