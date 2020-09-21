@@ -98,13 +98,20 @@ choices.forEach((choice) => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
 
-    const classToApply =
    
+    const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; 
+    console.log(classToApply);
+
+
+    selectedChoice.parentElement.classList.add(classToApply);
+
+    
+
+         setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
- 
+    }, 1000);
   });
 });
-
-
 
 startGame();
