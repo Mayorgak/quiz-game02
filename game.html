@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
-    <link rel="stylesheet" href="./app.css">
-     <link rel="stylesheet" href="./game.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./game.css" />
+  </head>
+  <body>
     <div class="container">
       <div id="game" class="justify-center flex-column">
+        
+        <div id="counter">
+          <div id="count-item">
+            <p class="count-prefix">Question</p>
+            <h1 class="count-main-text" id="questionCounter">1/3</h1>
+          </div>
+          <div id="count-item">
+            <p class="count-prefix">Score</p>
+            <h1 class="count-main-text" id="score">0</h1>
+          </div>
+        </div>
+
         <h2 id="question">What is the answer?</h2>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
