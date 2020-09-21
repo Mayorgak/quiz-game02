@@ -7,7 +7,7 @@ finalScore.innerText = mostRecentScore;
 
 
 
-const highScore = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 
 username.addEventListener("keyup", () => {
@@ -23,15 +23,15 @@ saveHighScore = (e) => {
         name: username.value
     };
 
-    highScore.push(score);
+    highScores.push(score);
 
-    highScore.sort( (a,b) =>  b.score - a.score)
+    highScores.sort( (a,b) =>  b.score - a.score)
     
-    highScore.splice(5);
+    highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    console.log(highScore);
+    
 
-    window.location.assign("/");
+    window.location.assign("./index.html");
 
 };
