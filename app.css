@@ -23,6 +23,8 @@ p ,
 a{
     margin-bottom: 1rem;
     font-family:  'Open Sans Condensed', sans-serif;
+    color: rgb(98, 33, 141);
+
 
 }
 
@@ -30,7 +32,7 @@ h1 {
     font-size: 5rem;
     color: rgb(98, 33, 141);
     margin-bottom: 5rem;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h1 > span {
@@ -59,6 +61,7 @@ h3{
     align-items: center;
     max-width: 80rem;
     margin: 0 auto; 
+    padding: 2rem;
 
 }
 

@@ -25,4 +25,25 @@
 
 .choice-text {
     padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: rgb(14, 224, 42);
+}
+
+.incorrect {
+    background-color: rgb(221, 98, 76);
+}
+
+/* Counter */
+
+#counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count-prefix{
+    text-align: center;
+
 }
