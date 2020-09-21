@@ -56,7 +56,8 @@ let questions = [
 
 
 const MAX_QUESTIONS = 5;
-const SUBTRACT_SCORE = 10;
+const CORRECT_BONUS = 15;
+const DECREASE_SCORE = 5;
 
 startGame = () => {
     questionCounter = 0;
@@ -104,6 +105,11 @@ choices.forEach((choice) => {
     const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect"; 
     console.log(classToApply);
 
+    if (classToApply === "correct"){
+      incrementScore(CORRECT_BONUS);
+    } else {
+      decreaseScore(DECREASE_SCORE);
+    }
 
     selectedChoice.parentElement.classList.add(classToApply);
 
@@ -115,5 +121,15 @@ choices.forEach((choice) => {
     }, 1000);
   });
 });
+
+incrementScore = (num) => {
+  score += num;
+  scoreText.innerText = score;
+};
+
+decreaseScore = (num) => {
+  score -= num;
+  scoreText.innerText = score;
+};
 
 startGame();
