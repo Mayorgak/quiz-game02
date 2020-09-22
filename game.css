@@ -38,7 +38,7 @@
 
 /* Counter */
 
-#counter {
+#counter, #timer{
     display: flex;
     justify-content: space-between;
 }

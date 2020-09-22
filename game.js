@@ -4,11 +4,13 @@ const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById("score");
 
 
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
 
 
 let questions = [
@@ -60,11 +62,16 @@ const MAX_QUESTIONS = 5;
 const CORRECT_BONUS = 15;
 const DECREASE_SCORE = 5;
 
+
+
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     console.log(availableQuestions);
+
+   
+
 getNewQuestion();
 
 };
